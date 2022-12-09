@@ -1,6 +1,7 @@
 'use strict';
 
 let bookList = [];
+let bookDetailsModal;
 
 window.addEventListener('load', () => {
   getAll().then((apiBooks) => (bookList = apiBooks));
