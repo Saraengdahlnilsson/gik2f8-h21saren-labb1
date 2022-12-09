@@ -7,7 +7,7 @@ const BookDetails = (book) => {
                 <div class="book-details__pages">Sidor: ${book.pages}</div>`;
 
   if (book.coverImage) {
-    html += `<img src="${book.coverImage}" alt="Omslagsbild" class="book-details__cover max-w-xs">`;
+    html += `<img src="${book.coverImage}" alt="Omslagsbild saknas" class="book-details__cover max-w-xs">`;
   }
 
   html += "</div>";
