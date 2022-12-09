@@ -8,5 +8,8 @@ const BookDetails = (book) => {
 
   if (book.coverImage) {
     html += `<img src="${book.coverImage}" alt="Omslagsbild" class="book-details__cover max-w-xs">`;
-  };
-}
+  }
+
+  html += '</div>';
+  return html;
+};

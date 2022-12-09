@@ -24,6 +24,8 @@ document.getElementById('root').addEventListener('mouseover', (e) => {
     return;
   }
 
+const bookId = e.target.dataset?.id;
+
   if (!bookId) {
   const bookId = e.target.dataset?.id;
   toggleModal(false);
@@ -52,7 +54,7 @@ function renderDetailsModal(e) {
 const root = document.getElementById('root');
 const modal = document.createElement('div');
 modal.id = 'bookDetails';
-modal.className = 'book-details absolute p-3 rounded-md border-2 border-blue-400 bg-white';
+modal.className = 'book-details absolute p-3 rounded-md border-2 border-black bg-white';
 modal.style.display = 'none';
  
   root.appendChild(modal);
@@ -72,8 +74,4 @@ function toggleModal(show, e) {
   } else {
     bookDetailsModal.style.display = 'none';
   }
-}
-
-if (!bookDetailsModal) {
-  renderDetailsModal(e);
 }
