@@ -1,5 +1,5 @@
 const BookDetails = (book) => {
-    let html = `<div
+  let html = `<div
                 class="book-details__content">
                 <h2 class="book-details__title">${book.title}</h2>
                 <div class="book-details__author">Författare: ${book.author}</div>
@@ -10,6 +10,6 @@ const BookDetails = (book) => {
     html += `<img src="${book.coverImage}" alt="Omslagsbild" class="book-details__cover max-w-xs">`;
   }
 
-  html += '</div>';
+  html += "</div>";
   return html;
 };
