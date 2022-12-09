@@ -57,7 +57,7 @@ function renderDetailsModal(e) {
   const modal = document.createElement("div");
   modal.id = "bookDetails";
   modal.className =
-    "book-details absolute p-3 rounded-md border-2 border-black bg-white";
+    "book-details absolute p-3 rounded-md border-2 border-pink-100 bg-pink-100";
   modal.style.display = "none";
 
   root.appendChild(modal);
